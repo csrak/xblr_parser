@@ -1,2 +1,2 @@
 # xbrl_parser
-Standalone parser for XBLR files, particularly focused on the IFRS reporting
+Standalone parser for XBRL files, particularly focused on the IFRS reporting
