@@ -19,6 +19,9 @@ def convert_to_dataframe(facts):
     """
     df = pd.DataFrame(facts)
 
+    if 'unit' in df.columns:
+        df['unit'] = df['unit'].fillna('NoUnit')
+
     # Process dimensions into separate columns
     if facts and 'dimensions' in facts[0]:
         all_dims = set()
